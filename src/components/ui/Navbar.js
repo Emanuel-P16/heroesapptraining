@@ -1,5 +1,3 @@
-import react from 'react'
-
 import { Link, NavLink, useNavigate } from "react-router-dom"
 
 export const Navbar = () => {
@@ -37,6 +35,16 @@ export const Navbar = () => {
                     to="/dc"
                     >
                         DC
+                    </NavLink>
+                    
+                    <NavLink
+                    // activeclassname="active"
+                    className={({isActive}) => 'nav-item nav-link ' + (isActive ? 'active' : '')}
+                    // className="nav-item nav-link"
+                    exact="true"
+                    to="/search"
+                    >
+                        Search
                     </NavLink>
                     
                 </div>
