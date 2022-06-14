@@ -1,9 +1,10 @@
 import {Routes,Route} from 'react-router-dom'
-import { Navbar } from "../components/ui/Navbar"
 import { MarvelScreen } from "../components/marvel/MarvelScreen"
 import { DcScreen } from "../components/dc/DcScreen"
 import { SearchScreen } from "../components/search/SearchScreen"
 import { HeroScreen } from '../components/hero/HeroScreen'
+import { Navbar } from '../ui'
+
 
 export const DashboardRoutes  = () => {
     return (
